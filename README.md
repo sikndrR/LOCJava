@@ -1,11 +1,5 @@
 # Java Game Project
 
-## Bug Report
-- No known bugs.
-
-## Feature Report
-- All features are implemented as intended.
-
 ## Data Structures and Classes
 
 ### Classes

@@ -28,7 +28,7 @@
 
 ### Algorithms
 - **Depth-First Search (DFS)**:
-  - A simplified DFS is used for the win condition, checking for contiguous pieces of the same color. The algorithm recursively searches around a piece, marking visited pieces and comparing the total count to the expected number of pieces.
+  - DFS (Depth First Search) - I used a simpler version of DFS for my win condition. The logic behind my win condition was a recursive function. I would find a piece on the board that matched the current player's color in the recursive function. From there, I would look around the piece and see if other similar colored pieces exist around the current piece. If so, go onto this piece and see if similar pieces exist next to it. However, it would also store pieces that have already been visited. After branching out, the total number of visited pieces is compared to the total number on the board. If the totals are equal, the win condition is true; however, if it doesn't, it is false.
 
 ## Development Log
 

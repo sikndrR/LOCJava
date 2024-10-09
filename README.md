@@ -11,11 +11,11 @@
 ### Classes
 - **Tournament**: Tracks statistics and determines the tournament winner.
 - **Round**: Manages the starting player and input validation based on a coin flip.
-- **Player**: Contains attributes such as player color, total pieces, human status, score, wins, and strategies.
+- **Player**: Have strategies stored, such as the characteristics of players' colors, total pieces, if they are human, score, win, and track of all pieces.
 - **Human**: Derived from `Player`, handles validation for user input.
 - **Computer**: Derived from `Player`, implements strategies for computer play.
 - **BoardView**: Composite class integrating `Board`, `Round`, `Player`, `Human`, `Computer`, and `Tournament`. Manages game logic, including board manipulation, validation, coin flips, scoring, and serialization.
-- **Board**: Handles board validation, move operations, win conditions, and piece management. Converts human-readable coordinates for internal game use.
+- **Board**: Validates if a piece can move to specific positions. Look for win conditions. Modifies board to move pieces. Finds pieces on the board and looks for positions to be played on the board. Converts coordinates between readable human text for the user and converted coordinates for my game to read correctly.
 
 ### Data Structures
 - **Player**: 
@@ -33,20 +33,20 @@
 ## Development Log
 
 ### April 8
-- **Task**: Converted C++ code to Java (Tournament class).
+- **Task**: I translated my tournament class from C++ into Java, aiming to familiarize myself with the Language and grasp its nuances. One notable difference I encountered was that Java requires header files to be consolidated into a single file, which posed a unique challenge.
 - **Time Spent**: 2 hours.
 
 ### April 10
-- **Task**: Continued C++ to Java conversion (Round and Player classes).
+- **Task**: The next class I tackled was my Round. While there were similarities with C++, one of the most notable differences was the need in Java to initialize a Random Object for my coinflip function to work. I then proceeded to create my Player class, although I set everything up without the computer/helper functions, another key difference from C++.
 - **Time Spent**: 2 hours.
 
 ### April 15
-- **Task**: Finished converting base game (Computer, Human, Board, BoardView).
+- **Task**: Finish implementing the rest of the code, including Computer, Human, Board, and BoardView classes, and start with the main difference between vectors and List and vectors to have a difference in bounds checking. Some of my C++ code would sometimes go out of bounds in its vectors, but Java was very strict with the limitations of going outside the array. So, additional boundaries were added to my movement validations. Another issue arose when selecting a piece because the character conversion in its math is different. So, instead, I changed my approach using a switch statement because Strings in Java have a function to get specific characters in a string. From this, I would compare the characters and then return a number appropriate for the board to parse through.
 - **Time Spent**: 2 hours.
 
 ### April 18 - 20
-- **Task**: Learning Android Studio.
-- **Time Spent**: 6 hours total.
+- **Task**: Watched half of the video https://www.youtube.com/watch?v=tZvjSl9dswg&t=6191s&ab_channel=CalebCurry
+- **Time Spent**: 10 hours total.
 
 ### April 22 - 28
 - **Tasks**:
@@ -57,8 +57,11 @@
   - Added serialization and load game functionality.
 - **Time Spent**: Varies between tasks, approximately 2 hours per task.
 
-## Generative AI Assistance
-- None.
 
 ## Screenshots
-_(Add screenshots of the game interface here)_
+![image](https://github.com/user-attachments/assets/93443577-5195-4931-883c-7ecc213babff)
+![image](https://github.com/user-attachments/assets/79f9ebc3-d7be-405d-8e37-ccc3ee87e0b2)
+![image](https://github.com/user-attachments/assets/ac23498f-5883-4ba2-aaaa-e1ea58b406f0)
+
+
+
